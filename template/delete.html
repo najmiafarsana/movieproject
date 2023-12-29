@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Delete Movies</h1>
+<form method="POST" >
+    {% csrf_token %}
+    Are you want to delete this movie?
+    <input type="submit">
+</form>
+{% endblock %}
